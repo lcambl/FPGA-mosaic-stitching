@@ -20,8 +20,8 @@ module fetch #(parameter ROI_DEPTH = 6, ROI_WIDTH = 6, POI_DEPTH = 4, POI_WIDTH 
 	// SMALL SCALE
 	initial begin
 		// Use $readmemh to read integers from the file
-		$readmemh("C:/Users/lucyc/OneDrive/school/Grad/Fall 2025/CSE548/project/mosaics_pynq/core_small.txt", core_mem); //"C:\Users\lucyc\OneDrive\school\Grad\Fall 2025\CSE548\project\smallScale\roi_small.txt"
-		$readmemh("C:/Users/lucyc/OneDrive/school/Grad/Fall 2025/CSE548/project/mosaics_pynq/roi_small.txt", roi_mem);
+		$readmemh("core_small.txt", core_mem);
+		$readmemh("roi_small.txt", roi_mem);
 	end
 	
 	// TEMP REGISTERS
